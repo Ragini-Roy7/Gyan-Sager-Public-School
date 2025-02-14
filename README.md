@@ -1,5 +1,4 @@
 # Gyan-Sager-Public-School
-School Website - Full-Stack Web Development
 This is a fully functional school website developed as my first freelancing project. The website provides a dynamic and user-friendly experience, ensuring seamless navigation and efficient school management.
 🚀 Tech Stack
 Frontend: HTML, CSS, JavaScript, Tailwind CSS
