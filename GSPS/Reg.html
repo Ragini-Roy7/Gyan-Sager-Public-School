@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Gyan Saager Public School</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/school-favicon.png" type="image/png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans antialiased bg-gradient-to-br from-blue-500 via-indigo-200 to-purple-300">
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-purple-800 via-indigo-700 to-blue-600 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center space-x-4 mb-4 md:mb-0">
+        <img src="/GSPS/images/logo2.jpg" alt="Gyan Saager Public School Logo" class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full shadow-lg border-4 border-white">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">
+          Gyan Saager Public School
+          <span class="block text-base font-normal mt-1 text-gray-200">Empowering Education, Inspiring Excellence</span>
+        </h1>
+      </div>
+      <nav class="space-x-4">
+        <a href="/GSPS/index.html" class="hover:text-purple-200 font-medium transition-colors duration-300">Home</a>
+        <a href="/GSPS/index.html" class="hover:text-purple-200 font-medium transition-colors duration-300">About</a>
+        <a href="/GSPS/index.html" class="hover:text-purple-200 font-medium transition-colors duration-300">Academics</a>
+        <a href="/GSPS/index.html" class="hover:text-purple-200 font-medium transition-colors duration-300">Faculty</a>
+      
+        <a href="/Contact.html" class="hover:text-purple-200 font-medium transition-colors duration-300">Contact</a>
+        <a href="/GSPS/login.html" class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 rounded-full px-4 py-2 transition-all duration-300 font-medium shadow-md">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Registration Section -->
+  <main class="flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-2xl w-full sm:w-96">
+      <h2 class="text-2xl font-semibold text-center mb-8 text-indigo-600">Create Your Account</h2>
+
+      <!-- Registration Form -->
+      <form action="#" method="POST">
+        <!-- Full Name -->
+        <div class="mb-4">
+          <label for="fullName" class="block text-gray-700 font-medium">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-medium">Email Address</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all">
+        </div>
+
+        <!-- Password -->
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 font-medium">Password</label>
+          <input type="password" id="password" name="password" required class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all">
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mb-6">
+          <label for="confirmPassword" class="block text-gray-700 font-medium">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all">
+        </div>
+
+        <!-- Register Button -->
+        <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-indigo-700 text-white py-3 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition duration-300 ease-in-out">
+          Register
+        </button>
+      </form>
+
+      <!-- Login Link -->
+      <div class="mt-4 text-center">
+        <p class="text-sm text-gray-700">Already have an account? <a href="/GSPS/login.html" class="text-indigo-600 font-semibold hover:underline transition-all">Login</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-800 via-blue-500 to-red-500 text-white py-8 shadow-2xl mt-auto">
+    <div class="container mx-auto grid md:grid-cols-3 gap-6 px-4">
+      <!-- Contact Info -->
+      <div>
+        <h4 class="font-bold mb-4 text-lg text-purple-300">Contact Us</h4>
+        <p>Gyan Saager Public School</p>
+        <p>Kupvi, Shimla, Himachal Pradesh</p>
+        <p>Phone: +91-1234-567-890</p>
+        <p>Email: <a href="mailto:info@gyansaager.edu.in" class="hover:text-purple-300 transition-colors duration-300">info@gyansaager.edu.in</a></p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold mb-4 text-lg text-purple-300">Quick Links</h4>
+        <nav>
+          <a href="#" class="block mb-2 hover:text-purple-300 transition-colors duration-300">Admissions</a>
+          <a href="#" class="block mb-2 hover:text-purple-300 transition-colors duration-300">Academic Calendar</a>
+          <a href="#" class="block mb-2 hover:text-purple-300 transition-colors duration-300">Student Portal</a>
+          <a href="#" class="block mb-2 hover:text-purple-300 transition-colors duration-300">Parent Resources</a>
+        </nav>
+      </div>
+
+      <!-- Social Links -->
+      <div>
+        <h4 class="font-bold mb-4 text-lg text-purple-300">Connect With Us</h4>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="Facebook" class="hover:text-blue-400 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-pink-400 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.148-4.771-1.699-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.584.07-4.849.148-3.252 1.691-4.771 4.919-4.919 1.265-.058 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.015-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.057 1.281-.072 1.689-.072 4.948 0 3.259.015 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.057 1.689.072 4.948.072 3.259 0 3.668-.015 4.948-.072 4.358-.2 6.78-2.618 6.98-6.98.057-1.281.072-1.689.072-4.948 0-3.259-.015-3.668-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98-1.281-.057-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

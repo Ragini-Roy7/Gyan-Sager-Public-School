@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     
+    <header>
+        <img src="images/logo2.jpg" with="200px" height="100px" class="logo-img">
+        <h1 class="s-name">Gyan Saager Public School,Kupvi,Shimla,HP <br>
+            ज्ञान सागर पब्लिक स्कूल, कुपवी, शिमला, हिमाचल प्रदेश</h1>
+           
+    </header>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#about us">About Us</a>
+        <a href="academics">Academics</a>
+        <a hre="faculty">Faculty</a>
+        <a href="gallery">Our Gallery</a>
+        <a href="contact">Contact Us</a>
+        <a href="login">Login</a>
+    </div>
+    <!-- gallery on home page -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="images/achievement2.jpg" height="550px" width="400px"  alt="Trophy Celebration">
+        </div>
+        <div class="carousel-item">
+          <img src="images/activity crp.jpg" height="550px"   width="400px" alt="Activity">
+        </div>
+        <div class="carousel-item">
+          <img src="images/co-curicular crp.jpg" height="550px"   alt="Co-curricular">
+        </div>
+        <div class="carousel-item">
+          <img src="images/cuties.jpg" height="550px"   alt="Cuties">
+        </div>
+        <div class="carousel-item">
+          <img src="images/drawing compt crp.jpg" height="500px"  alt="Drawing Competition">
+        </div>
+        <div class="carousel-item">
+          <img src="images/smart students.jpg" height="550px"   alt="Smart Students">
+        </div>
+        <div class="carousel-item">
+          <img src="images/studies crp.jpg" height="550px"   alt="Studies">
+        </div>
+        <div class="carousel-item">
+          <img src="images/welcome.jpg" height="550px"  alt="Welcome">
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+      </div>
+    </div>
+    <div class="caption">
+      <p id="caption-text">
+        Welcome to Gyan Saager Public School
+     </div>
+
+     <!-- message -->
+     <div class="about-infrastructure">
+      <h2>Our Infrastructure</h2>
+      <p>
+        Our school boasts state-of-the-art facilities, including modern classrooms, 
+        well-equipped laboratories, a vast library, and sports facilities to provide students 
+        with a holistic learning environment. We ensure that every student has access to the 
+        best resources for academic and extracurricular development.
+      </p>
+      <p>
+        Explore our green campus, digital learning systems, and supportive community 
+        that make learning a joyful experience.
+      </p>
+    </div>
+    
+       
+
+
+    
+     <script>
+const captions = [
+  "Welcome to Gyan Saager Public School",
+  "Explore Our Co-Curricular Activities",
+  "Our Little Stars",
+  "Learning with Dedication",
+  "Our estmeed Principal maa`m",
+  "Little stars learning with curosity",
+  "Little hands shaping their future",
+  "Brilliant minds in the making",
+  "Future of nations showcasing their talents"
+];
+
+// for caption overlay
+let currIndex = 0;
+
+const captionText = document.getElementById('caption-text');
+
+function showCaption(index) {
+  captionText.textContent = captions[index];
+}
+
+function nextCaption() {
+  currIndex = (currIndex + 1) % captions.length; // Cycle through captions
+  showCaption(currIndex);
+}
+
+// Automatically update captions every 3 seconds
+setInterval(nextCaption, 3000);
+
+// for sliding 
+
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  const itemWidth = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+function moveToNextSlide() {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+}
+
+function moveToPrevSlide() {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateCarousel();
+}
+
+nextButton.addEventListener('click', moveToNextSlide);
+prevButton.addEventListener('click', moveToPrevSlide);
+
+window.addEventListener('resize', updateCarousel);
+
+// Auto-slide functionality
+const autoSlideInterval = setInterval(moveToNextSlide, 3000);
+
+// Restart auto-slide on manual interaction
+prevButton.addEventListener('click', () => {
+  clearInterval(autoSlideInterval);
+  setTimeout(() => setInterval(moveToNextSlide, 3000), 5000);
+});
+
+nextButton.addEventListener('click', () => {
+  clearInterval(autoSlideInterval);
+  setTimeout(() => setInterval(moveToNextSlide, 3000), 5000);
+}); 
+
+
+
+
+
+</script>
+  
+</body>
+</html>
